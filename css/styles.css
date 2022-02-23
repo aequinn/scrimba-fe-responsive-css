@@ -7,18 +7,45 @@
 
 body {
   font-size: 16px;
+  background-color: #ffff;
+  font-family: "Lora", serif;
 }
 
 /*
 Typography
 */
+.page-title {
+  font-size: 2rem;
+  color: #143774;
+}
+
+.subtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #1792d2;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+ul li a {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #717171;
+}
 
 /******
 Layout
 *******/
 header {
   font-size: 1.75em;
-  background-color: #dbdbdb;
+  background-color: #f8f8f8;
   padding: 2rem;
   text-align: center;
 }
