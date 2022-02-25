@@ -1,51 +1,98 @@
 /*CSS Styles for Simple Life Site*/
+:root {
+  --primary-color: #143774;
+  --secondary-color: #1792d2;
+  --primary-font: "Ubuntu";
+  --accent-font: "lora";
+}
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-size: 16px;
   background-color: #ffff;
-  font-family: "Lora", serif;
+  font-family: var(--primary-font), sans-serif;
 }
 
 /*
 Typography
 */
 .page-title {
+  font-family: var(--accent-font), serif;
   font-size: 2rem;
-  color: #143774;
+  color: var(--primary-color);
 }
 
 .subtitle {
-  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
-  color: #1792d2;
+  color: var(--secondary-color);
   text-transform: uppercase;
   letter-spacing: 2.4px;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-ul li a {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  text-decoration: none;
-  color: #717171;
+  margin-bottom: 1.5rem;
 }
 
 /******
 Layout
 *******/
 header {
-  font-size: 1.75em;
   background-color: #f8f8f8;
   padding: 2rem;
   text-align: center;
+}
+
+.container {
+  width: min(95%, 100rem);
+  /* width: 100vw; */
+  display: flex;
+  justify-content: space-around;
+  margin-inline: auto;
+}
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*********
+Menus
+*********/
+.menu {
+  list-style-type: none;
+  margin: 0 0;
+  display: flex;
+}
+
+.menu-item {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0.95rem;
+  letter-spacing: 2.3px;
+}
+
+.menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  padding-bottom: 0.25rem;
+}
+
+.menu-active {
+  border-bottom: #717171 solid 3px;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--secondary-color);
+}
+
+.menu-link:active {
+  color: var(--primary-color);
 }
