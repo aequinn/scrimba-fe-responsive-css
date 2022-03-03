@@ -25,6 +25,7 @@ Typography
   font-family: var(--accent-font), serif;
   font-size: 2rem;
   color: var(--primary-color);
+  transition: all 0.5s ease-out;
 }
 
 .subtitle {
@@ -34,6 +35,7 @@ Typography
   text-transform: uppercase;
   letter-spacing: 2.4px;
   margin-bottom: 1.5rem;
+  transition: all 0.5s ease-out;
 }
 
 /******
@@ -41,7 +43,7 @@ Layout
 *******/
 header {
   background-color: #f8f8f8;
-  padding: 2rem;
+  padding: 3.5rem 2rem;
   text-align: center;
 }
 
@@ -53,13 +55,24 @@ header {
   margin-inline: auto;
 }
 @media screen and (max-width: 850px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 0.6rem;
+    letter-spacing: 1.4px;
+    margin-top: 0.3rem;
+  }
   .container {
     flex-direction: column;
     align-items: center;
   }
-  .menu{
+  .menu {
     flex-direction: column;
     align-items: center;
+  }
+  .menu-item {
+    padding-bottom: 0.3rem;
   }
 }
 /*********
