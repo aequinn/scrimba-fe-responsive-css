@@ -23,6 +23,7 @@ Typography
 */
 .page-title {
   font-family: var(--accent-font), serif;
+  font-weight: 500;
   font-size: 2rem;
   color: var(--primary-color);
   transition: all 0.5s ease-out;
@@ -46,7 +47,9 @@ header {
   padding: 3.5rem 2rem;
   text-align: center;
 }
-
+main {
+  padding: 2rem 2rem;
+}
 .container {
   width: min(95%, 100rem);
   /* width: 100vw; */
@@ -75,6 +78,16 @@ header {
     padding-bottom: 0.3rem;
   }
 }
+
+.primary-content {
+  display: grid;
+  width: 70%;
+}
+
+.secondary-content {
+  width: 25%;
+}
+
 /*********
 Menus
 *********/
