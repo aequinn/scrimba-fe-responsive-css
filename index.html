@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container container-nav">
         <div class="logo">
           <h1 class="page-title">Living the Simple Life</h1>
           <div class="subtitle">A Blog Exploring Minimalism in Life</div>
@@ -49,9 +49,9 @@
           <p class="article-info">July 23, 2019 | 3 comments</p>
 
           <p class="article-body">
-            Life can get complicated really quickly, but it doesn't have to be!
-            There are many ways to simplify your life, a few of which we've
-            explored in the past. This week we're taking a bit of a approach
+            <span class="text-bold">Life can get complicated really quickly</span>, but it doesn't have to be!
+            There are many ways to simplify your life, <a href="#">a few of which we've
+            explored in the past</a>. This week we're taking a bit of a approach
             though, in how you can find simplicity in the life you already
             living.
           </p>
@@ -109,39 +109,46 @@
         <!-- Start Aside Section -->
         <aside class="sidebar">
           <div class="sidebar-widget">
-            <h2 class="widget-title">About Me</h2>
-            <img
-              class="widget-img"
-              src="/img/about-me.jpeg"
-              alt="Me outdoors"
-            />
-            <p class="widget-body">
-              I find life better, and I'm happier, when things are nice and
-              simple.
-            </p>
+            <div class="sidebar-widget-container">
+              <h2 class="widget-title">About Me</h2>
+              <img
+                class="widget-img"
+                src="/img/about-me.jpeg"
+                alt="Me outdoors"
+              />
+              <p class="widget-body">
+                I find life better, and I'm happier, when things are nice and
+                simple.
+              </p>
+            </div>
+            <!--End widget container-->
           </div>
+
           <div class="sidebar-widget">
-            <h2 class="widget-title">Recent Posts</h2>
-            <div class="widget-recent-post">
-              <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
-              <img src="/img/food.jpeg" alt="dumplings" />
+            <div class="sidebar-widget-container">
+              <h2 class="widget-title">Recent Posts</h2>
+              <div class="widget-recent-post">
+                <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
+                <img src="/img/food.jpeg" alt="dumplings" />
+              </div>
+              <div class="widget-recent-post">
+                <h3 class="widget-recent-post-title">Simplicity and work</h3>
+                <img src="/img/work.jpeg" alt="minimalist workspace" />
+              </div>
+              <div class="widget-recent-post">
+                <h3 class="widget-recent-post-title">Simple decorations</h3>
+                <img src="/img/deco.jpeg" alt="simple plants" />
+              </div>
             </div>
-            <div class="widget-recent-post">
-              <h3 class="widget-recent-post-title">Simplicity and work</h3>
-              <img src="/img/work.jpeg" alt="minimalist workspace" />
-            </div>
-            <div class="widget-recent-post">
-              <h3 class="widget-recent-post-title">Simple decorations</h3>
-              <img src="/img/deco.jpeg" alt="simple plants" />
-            </div>
+            <!--End widget container-->
           </div>
         </aside>
         <!-- End Aside Section -->
       </main>
     </div>
     <footer>
-      <p>Living the Simple Life</p>
-      <p>Copyright 2022</p>
+      <p class="footer-logo">Living the Simple Life</p>
+      <p class="footer-legal">Copyright 2022</p>
     </footer>
   </body>
 </html>
