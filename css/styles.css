@@ -172,6 +172,10 @@ header {
     grid-template-columns: 3fr 1.5fr;
     align-items: start;
   }
+
+  .article-recent-secondary{
+    order: -2
+  }
 }
 
 .article-featured {
@@ -197,7 +201,7 @@ header {
 .sidebar-widget {
   background-color: var(--background-gray-color);
   padding: 1em;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 .sidebar-widget-container {
   background-color: var(--background-white-color);
@@ -215,16 +219,16 @@ header {
 }
 
 .article-recent-secondary > .article-info {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
+  text-align: right;
 }
+
 .article-recent-secondary > img {
   margin-bottom: 1rem;
 }
+
 .article-recent-main {
   order: 2;
-  margin-top: -20px;
+  margin-top: -2.5em;
 }
 
 .widget-recent-post {
