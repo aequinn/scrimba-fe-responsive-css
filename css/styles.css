@@ -31,6 +31,13 @@ Typography
   font-weight: 900;
 }
 
+h3 {
+  color: var(--secondary-color);
+  font-size: 1.2em;
+  font-family: var(--accent-font);
+  margin: 1.1em 0;
+}
+
 .page-title,
 .article-title {
   font-family: var(--accent-font), serif;
@@ -173,9 +180,22 @@ header {
     align-items: start;
   }
 
-  .article-recent-secondary{
-    order: -2
+  .article-recent-secondary {
+    order: -2;
   }
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-size: 1.1em;
+  font: var(--accent-font);
+  margin: 1.3em 0;
+}
+
+.article-hero {
+  height: 308px;
+  object-position: bottom;
+  margin-bottom: 2rem;
 }
 
 .article-featured {
